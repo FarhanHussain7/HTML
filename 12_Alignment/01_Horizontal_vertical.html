@@ -1,0 +1,51 @@
+<!-- Ex: To Keep content center on page.
+
+- display :flex
+- justify-content: center;        Horizontal alignment
+- align-items:center;                Vertical alignment -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-size: cover;
+            background-color: black;
+            color: white;
+            font-family: Arial;
+        }
+        h1{
+            width: 500px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0, 0.7);
+            flex-direction: column;
+            height: 500px;
+            margin: -20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body background="/New Folder/pictures/netflixbanner.jpg">
+    <div class="container">
+        <div class="main">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

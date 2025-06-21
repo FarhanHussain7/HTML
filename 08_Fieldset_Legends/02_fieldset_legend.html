@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>fieldset and legend</title>
+</head>
+<style>
+    dt{
+        background-color: grey;
+        color: white;
+        margin-bottom: 10px;
+        padding: 4px;
+    }
+    dl{
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+    }
+    fieldset{
+        margin-bottom: 20px;
+        border: 1px solid red;
+        box-shadow: -10px 15px 20px red;
+        width: 400px;
+        margin-left: 300px;
+    }
+    .second{
+        box-shadow: 0px 0px 50px green;
+    }
+    legend{
+        background-color: yellow;
+        color: red;
+        text-align: center;
+        width: 150px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 15px blueviolet;
+    }
+    body{
+        border: 10px solid blue;
+        box-shadow: 20px 20px 10px darkgreen;
+        border-radius: 50px;
+        margin: 60px;
+    }
+
+    /* text shadow */
+    div{
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 5px 5px 5px black;
+        color: red;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+
+
+
+</style>
+<body>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <dl>
+            <dt>First Name</dt>
+            <dd>some name</dd>
+            <dt>last name</dt>
+            <dd>some name</dd>
+            <dt>father Name</dt>
+            <dd>some name</dd>
+        </dl>
+    </fieldset>
+    <fieldset class="second">
+        <legend>Additional Information</legend>
+        <dl>
+            <dt>First Name</dt>
+            <dd>some name</dd>
+            <dt>last name</dt>
+            <dd>some name</dd>
+            <dt>father Name</dt>
+            <dd>some name</dd>
+        </dl>
+    </fieldset>
+    <!-- this is used for showing text shadow  -->
+    <div>web technology</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Creation of Labels for HTML Elements: 
+We can define Label Text for our HTML Elements like Radio Buttons, Text Box etc by using <label> tag. 
+Syntax:<label for="name">Enter Name:</label> 
+<p>Enter Name:</p> 
+<input type="text" name="username" placeholder="Enter Name"> 
+In this case there is no relation between text box and data. 
+To link data to text box,we have to use <label> tag. 
+<label for="name">Enter Name:</label> 
+<input id="name" type='text' name='username' value='Name to Contact' > -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+<form action="thanku.html">
+<label for="uname">Enter Name:</label>
+<input id="uname" type="text" name="username" value="enter name" required>
+<input type="submit" value="Login">
+<label for="Radio" >Male</label>
+<input type="radio" name="Male" id="">
+</form>
+</body>
+</html>

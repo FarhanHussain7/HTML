@@ -1,0 +1,87 @@
+<!-- Style Attributes:
+background-color		:set background color 
+color 				:set text color
+text-align			: set alignment left, center, right justify
+border				:set border    [size, style, color]   
+					ex:- border: 2px solid|dotted|dashed red; 
+
+
+margin-left
+margin-right
+margin-top
+margin-bottom
+margin				: all directions
+
+
+padding-left
+padding-right
+padding-top
+padding-bottom
+padding				: all directions
+
+
+border-radius			: curved border [pixels]
+
+height				: height of element
+width				: width of element
+
+
+Distribute Contents into multiple colums:
+
+display:grid
+grid-template-columns: how many columns are their size. Max 12 columns
+
+Note: Columns width is pixels and fractions
+	pixels 		: max 1200px		fixed size
+	fr		:max 12  		adjust according to browser
+
+
+
+
+
+
+
+
+Columns can be defined by using 
+	a) dispaly : grid
+	b) columns
+Display : grid - Every columns is individual.
+		contents of one columns will not span to next coloumn.
+Coloumn - It is used for continous columns.
+		the content will span to next column when if fits the previous.
+Note: In grid data can be flow outside the border but never adjust in another columns,
+      But in Columns if data amount is huge than it will automatically adjust in another columns. -->
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <style>
+              #container{
+                  border: 2px solid red;
+                  /* display: grid;
+                  grid-template-columns: 4fr 4fr 4fr; */
+                  height: 300px;
+                  columns: 3;
+              }
+          </style>
+      </head>
+      <body>
+          <div id="container">
+              <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A suscipit nesciunt amet ab. Dolor id voluptate optio ipsum debitis beatae molestiae est totam quaerat quas molestias perferendis, nam nemo aliquam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi at inventore beatae nesciunt voluptatem, perferendis ullam laudantium voluptas atque numquam adipisci doloremque distinctio nemo amet impedit rerum. Architecto aliquam nihil quisquam minima similique alias magni nam quod neque ratione rem nemo, repellat dolorem aperiam unde repellendus? Fuga, ipsa corrupti nihil quasi quibusdam harum dignissimos quo aliquam vero recusandae quisquam voluptatibus debitis quam asperiores tempora eveniet dicta itaque? Necessitatibus animi ratione ad illo, eveniet praesentium sint reiciendis! Optio perferendis aspernatur necessitatibus delectus laborum impedit accusamus totam minus quos distinctio modi, qui doloribus culpa at. Tenetur impedit voluptate similique ipsam labore quisquam./div>
+              <div>coloum2</div>
+              <div>coloum3</div>
+          </div>
+      </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+

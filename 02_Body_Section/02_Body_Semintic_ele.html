@@ -1,0 +1,114 @@
+<!-- BODY SEMANTIC ELEMENTS
+- Upto HTML 4 body section is designed by using Tables
+- Tables lead to a situation is called "Kiss of death".
+- Tables are not SEO friendly.
+- HTML 5 introduced new elements into body section to design a layout that can be SEO friendly.
+- The new elements of HTML 5 Body section are:
+		1.aside
+		2.article
+		3.dialog
+		4.figure
+		5.figcaption
+		6.header
+		7.footer
+		8.section
+		9.main
+		10.nav
+		11.menu
+		12.div
+		13.span
+
+- All are containers
+		<aside>
+			..your content
+		</aside>
+- Div defines blocked content.
+- Span defines inline conten. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SEO Document</title>
+  </head>
+  <style>
+    header,
+    footer {
+      background-color: red;
+      color: black;
+      border: 2px solid black;
+      text-align: center;
+      height: 40px;
+      padding-top: 10px;
+      border-radius: 20px;
+    }
+    section {
+      height: 350px;
+      display: grid;
+      grid-template-columns: 3fr 5fr 2fr;
+      margin: 10px;
+    }
+    figure {
+      background-color: rgb(240, 197, 197);
+      border: 2px dotted black;
+      height: 200px;
+      width: 200px;
+      margin-left: -20px;
+      text-align: center;
+      padding: 5px;
+    }
+    aside {
+      border: 2px solid black;
+      height: 200px;
+      padding: 20px;
+    }
+    article {
+      border: 2px dotted black;
+      background-color: red;
+      border-radius: 20px;
+      height: 50px;
+      width: 200px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    nav div {
+      border: 2px solid red;
+      border-radius: 10px;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      height: 20px;
+      width: 80px;
+      margin-top: 20px;
+      margin-left: -30px;
+    }
+    body {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  </style>
+  <body background="banner.jpeg">
+    <header>Amazon</header>
+    <section>
+      <nav>
+        <menu>
+          <div>home</div>
+          <div>electronic</div>
+          <div>about</div>
+          <div>your order</div>
+          <div>help</div>
+        </menu>
+      </nav>
+      <main>
+        Shopping main content...
+        <article>50% off on diwali shoopings</article>
+        <figure>
+          Image here
+          <figcaption>images of mobile</figcaption>
+        </figure>
+      </main>
+      <aside>ads... on</aside>
+    </section>
+    <footer>copyright 2022</footer>
+  </body>
+</html>

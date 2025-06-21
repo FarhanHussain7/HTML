@@ -1,0 +1,71 @@
+<!-- BODY SECTION 		
+The body section is defined by using <body> element.
+Body is defined by using following attributes
+1.	Bgcolor
+2.	Background
+3.	Text
+4.	Align
+5.	Alink
+6.	Vlink
+7.	Leftmargin
+8.	Rightmargin
+9.	Bottommargin
+10.	Topmargin
+
+
+3: backgroud : it is used to set backgroud image for body section
+		<body background="image_path">
+Note:
+1. Always use only virtual path for resources [images]
+2. Don't use physical path [Drive:c\folder\]
+
+FAQ; what is virtual path ?
+Ans: Virtual path is the local reference path of resourse in the project.
+	1. first copy image into your project local folders.
+	2. access from the folder without mentioning drive name. [D,E]
+		
+		E:\Images\shoe.jpg                        Physical path
+		images/shoe.jpg				  Virtual path
+		
+		\ back slash only in physical path.
+		/ forward slash is used in virtual path.
+ex: 
+1. create a folder by name "Images" in public folder.
+2. copy any image into folder
+		project/public/Images/shoe.jpg
+		(jpg- Joint photographic Expert Group)
+3. access from your html file
+		<body background="./images/shoe.jpg">
+
+Controlling backgroud image:
+1. Add <style> in head section
+2. write a code in block for body section
+
+	<style>
+		body
+		{
+		}
+	</style>
+3. To control backgroud image you can apply the following attributes
+		backgroud-repeat : repeat  | no-repeat  | repeat-x   | repeat-y
+		backgroud-position : top, center, bottom     | left, center, right
+		backgroud-size : width px , height px | cover | contain	
+		backgroud-attachment : fixed | scroll 
+FAQ: can we make backgroud image lighter, darker or transparent?
+Ans: You can't define by using any CSS attributes.
+	you can implement by using alpha color with containers
+
+Syntax:   
+		<body background="images/netflixback.jpg">
+			<div> </div>
+		      </body>
+		<style>
+			div{
+				height: 768px;
+				backgroud-color: rgba(0,0,0,0.3);
+			   }
+		</style>
+
+         -->
+
+         
